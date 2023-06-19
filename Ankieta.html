@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="Ankieta.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <meta charset="UTF-8">
+    
+    <center><p style="font-family: serif; font-size: 60px;";>Ankieta</p></center>
+</head>
+<body>
+    <center><h1><p style="font-family: Arial, Helvetica, sans-serif; font-size: 30;">Zapraszam do wzięcia udziału w ankiecie. Odpowiedzi nie muszą być zgodne z prawdą.</p></h1></center>
+    <br>
+    <form id="formD">
+        <center><label for="Klasa" style="font-size: 25px;">Wybierz klasę</label>
+            <div><select name="Klasy-Btns" id="Klasy-Btns" style="font-size: 25px;">
+                <option value="1 Klasa">1 Klasa</option>
+                <option value="2 Klasa">2 Klasa</option>
+                <option value="3 Klasa">3 Klasa</option>
+                <option value="4 Klasa">4 Klasa</option>
+                <option value="5 Klasa">5 Klasa</option>
+            </select></div></center>
+            <br>
+            <br>
+            <center>
+            <label for="Kierunek" style="font-size: 25px;">Wybierz kierunek</label>
+            <div>><select name="Kierunek-Btns" id="Kierunek-Btns" style="font-size: 25px;">
+            <option value="Informatyk">Informatyk</option>
+            <option value="Mechanik">Mechanik</option>
+            <option value="Logistyk">Logistyk</option>
+            <option value="Reklama">Technik Reklamy</option>
+            </select></div></center>
+            <br>
+            <br>
+            <center><p style="font-size: 20px; font-family:'Courier New', Courier, monospace">Wybierz płeć</p>
+            <div><input type="radio" name="Plec" id="PlecM" value="Mężczyzna"> Mężczyzna</div>
+            <div><input type="radio" name="Plec" id="PlecK" value="Kobieta"> Kobieta</div>
+            <div><input type="radio" name="Plec" id="PlecN" value="Bez odpowiedzi"> Wolę nie podawać</div></center>
+            <br>
+            <br>
+            <center><p style="font-size: 20px; font-family:'Courier New', Courier, monospace">Podaj swoje imię</p></center>
+            <center><div><input type="text" id="Imie"></div></center>
+            <br>
+            <br>
+            <center><p style="font-size: 20px; font-family:'Courier New', Courier, monospace">Dodaj kilka słów od siebie.</p></center>
+            <center><div><input type="text" id="Opis"></div></center>
+            <br>
+            <br>
+            <center><p style="font-size: 20px; font-family:'Courier'">Podaj swój adres e-mail. Na ten adres dostaniesz kopię swoich odpowiedzi.</p></center>
+            <center><div><input type="text" id="Email"></div></center>
+            <br>
+            <br>
+
+    </form>
+    <center><input type="button" value="Wyślij" style="font-size:30px;" onclick="EndForm(); return false;"></center>
+</body>
+
+</html>
